@@ -1,11 +1,8 @@
 [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls -bor [Net.SecurityProtocolType]::Tls11 -bor [Net.SecurityProtocolType]::Tls12
 
-# $orgName = Read-Host -Prompt "Enter your Tenant name"
-# $clientID = Read-Host -Prompt "Enter your Client ID"
-# $clientSecret = Read-Host -Prompt "Enter your Client Secret"
-$orgName = "partner3796"
-$clientID = "a162b94efd984c3da1ddce356020c269"
-$clientSecret = "f2821a1eb514eeb40b75c96570760877beb501d8019effb5cf4014f3183fc87"
+$orgName = Read-Host -Prompt "Enter your Tenant name"
+$clientID = Read-Host -Prompt "Enter your Client ID"
+$clientSecret = Read-Host -Prompt "Enter your Client Secret"
 # Get v3 oAuth Token
 # oAuth URI
 $oAuthURI = "https://$($orgName).api.identitynow-demo.com/oauth/token"
